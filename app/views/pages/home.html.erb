@@ -1,0 +1,5 @@
+select room
+
+<% @rooms.each do |room| %>
+  <p><%= link_to room.name, new_reservation_path(room_id: room.id) %></p>
+<% end %>  

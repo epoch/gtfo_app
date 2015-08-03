@@ -1,0 +1,5 @@
+<%= @room.name %>
+
+<% @room.reservations.each do |r| %>
+  <p><%= r.start_at %> <%= r.email %></p>
+<% end %>
